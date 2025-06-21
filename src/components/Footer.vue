@@ -14,29 +14,29 @@
       <div>
         <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
         <ul class="space-y-2 text-gray-100">
-          <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">Shop</a></li>
-          <li><a href="#" class="hover:underline">About</a></li>
-          <li><a href="#" class="hover:underline">Contact</a></li>
+           <RouterLink to="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" 
+          :class="{ 'bg-gray-900 text-white': $route.path === '/' }">Home</RouterLink>
+        <RouterLink to="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" 
+          :class="{ 'bg-gray-900 text-white': $route.path === '/about' }">About</RouterLink>
+        <RouterLink to="/service" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" 
+          :class="{ 'bg-gray-900 text-white': $route.path === '/service' }">Service</RouterLink>
+        <RouterLink to="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" 
+          :class="{ 'bg-gray-900 text-white': $route.path === '/contact' }">Contact</RouterLink>
+     
         </ul>
       </div>
 
       <!-- Social Icons -->
       <div>
         <h3 class="text-xl font-semibold mb-3">Follow Us</h3>
-        <div class="flex space-x-4">
-          <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-facebook fa-lg"></i></a>
-          <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-twitter fa-lg"></i></a>
-          <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-pinterest fa-lg"></i></a>
-        </div>
+        <h1>charyna.chab@student.passerellesnumeriques.org</h1>
       </div>
 
     </div>
 
     <!-- Bottom note -->
     <div class="text-center text-gray-300 mt-8 text-sm">
-      &copy; 2025 Plantify. All rights reserved.
+     Bring life to your space — one plant at a time.
     </div>
   </footer>
 </template>
